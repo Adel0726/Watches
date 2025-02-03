@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+
+nav {
+    position: sticky;
+    background-color: aliceblue;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+.logo {
+    color: black;
+    display: flex;
+    align-items: center;
+    scale: 1.2;
+    gap: 5px;
+}
+
+h3 {
+    font-family: "Luxurious Roman", serif;
+    }
+
+
+
+
+input {
+    height: 50px;
+    width: 250px;
+}
