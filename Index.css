@@ -1,9 +1,20 @@
+
+:root {
+    --primary-color: #FFFFFF;
+    --website-color: #3884bd
+}
+
 .menu-links {
     margin-right: 20px;
 }
 
 .navbar-column {
     margin: 0 !important;
+}
+
+.navbar {
+    background-color: var(--website-color) ;
+
 }
 
 #layout{
@@ -16,8 +27,8 @@
 
 
 .footer {
-    background-color: #222;
-    color: #fff;
+    background-color: var(--website-color);
+    color: var(--primary-color);
     padding: 40px 0;
     text-align: center;
 }
@@ -58,12 +69,28 @@
 
 .footer-links ul li a,
 .footer-social ul li a {
-    color: #fff;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 .footer-links ul li a:hover,
 .footer-social ul li a:hover {
     text-decoration: underline;
+}
+
+
+.footer-social ul li a {
+    display: flex;
+    margin: 10px;
+}
+
+.footer_logo {
+    filter: invert(100%);
+    width: 16px;
+}
+
+.footer_logo_text {
+    margin: 0 0 0 5px;
+    color: var(--primary-color);
 }
 

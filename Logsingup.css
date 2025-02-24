@@ -1,0 +1,14 @@
+.Formular {
+    background-color:  var(--accent-color);
+    min-height: 80vh;
+}
+
+form {
+    align-self: center;
+    justify-self: center;
+    grid-area: form;
+}
+
+Footer {
+ grid-area: footer;
+}

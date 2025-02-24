@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+
+:root  {
+   --primary-color: #FFFFFF;
+   --secondary-color: #000000;
+   --accent-color: #1f3342;
+   --accent-color-2: #3884bd;
+}
+
+
+.navbar {
+   background-color: var(--accent-color-2);
+}
+
+.h1_passwordforgotten, form h3 {
+   color: var(--primary-color);
+}
+
+form h3 {
+   font-size: 1,4rem;
+}
+
+.h1_passwordforgotten {
+   font-size: 2rem;
+   justify-self: center;
+   margin-top: 100px;
+
+}
+.switchy-friend {
+   margin: 20px 0 !important;
+}
+
+form {
+    border: 1px solid var(--primary-color);
+    backdrop-filter: blur(19px);
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 25px 0 0 25px ;
+    width: 490px;
+}
+
+
+.input_field {
+    margin: 15px 0 ;
+    border-bottom: 2px solid var(--primary-color);
+    position: relative;
+ }
+
+
+ .input_field input {
+   font-family: "DM Serif Text", serif;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--primary-color);
+    height: 40px;
+    width: 100%;
+    box-shadow: 0 0 0 30px var(--accent-color) inset;
+ }
+
+ 
+
+ .input_field_button {
+
+    border: 2px solid var(--primary-color);
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 12px 20px;
+    border: none;
+    font-weight: 600;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+ }
+
+ 
+.input_field input:focus~label, .input_field input:valid~label {
+   transform: translateY(-120%);
+   top: 10px;
+   font-size: 0.8rem;
+}
+ 
+.switchy {
+   color: var(--primary-color);
+   margin: 17px 0 0 0 !important;
+}
+
+ .input_field label {
+   font-family: "DM Serif Text", serif;
+   color: var(--primary-color);
+   position: absolute;
+   left: 0;
+   transform: translateY(-50%);
+   pointer-events: none;
+   font-size: 16px;
+   top: 50%;
+   transition: all 0.15s ease;
+}
+
+.input_field textarea {
+   font-family: "DM Serif Text", serif;
+   margin-top: 10px;
+   font-size: 16px;
+   font-weight: 500;
+   outline: none;
+   border: none;
+   background-color: transparent;
+   color: var(--primary-color);
+}
+
+
+.input_field label.textarea_label {
+   transform: translateY(-10%);
+   top: 1%;
+   
+}
+
+.input_field textarea:focus~label.textarea_label, .input_field textarea:valid~label.textarea_label {
+   transform: translateY(-120%);
+   top: 10px;
+   font-size: 0.8rem;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+
+   
+   form {
+      width: 300px;
+   }
+
+}
+
+@media (max-width: 400px) {
+   
+   form {
+      width: 200px;
+   }
+
+}

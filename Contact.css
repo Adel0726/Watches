@@ -1,0 +1,70 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {  
+    overflow-x: hidden;
+}
+
+:root  {
+    --primary-color: #FFFFFF;
+    --secondary-color: #000000;
+    --accent-color: #0667E1;
+    --accent-color-2: #0D0889;
+}
+
+
+.Container {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr  1fr;
+    background-color:  var(--accent-color);
+
+    grid-template-areas: 
+    "nav"
+    "form"
+    "footer";
+}
+
+form {
+    align-self: center;
+    justify-self: center;
+    grid-area: form;
+}
+
+Footer {
+ grid-area: footer;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+
+    .Container {
+        grid-template-rows: 0.25fr 2fr 0.5fr;
+        overflow-x: hidden;
+    }
+
+    form {
+        margin: 50px 0 0 0;
+        align-self: baseline;
+    }
+
+}
+
+@media (max-width: 400px) {
+ 
+    .Container {
+        grid-template-rows: 0.25fr 2fr 0.5fr;
+        overflow-x: hidden;
+    }
+
+    form {
+        margin: 25px 0 0 0;
+        align-self: baseline;
+    }
+
+}
