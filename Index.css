@@ -94,3 +94,6 @@
     color: var(--primary-color);
 }
 
+.index-products-container{
+    display: flex;
+}

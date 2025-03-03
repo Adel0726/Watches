@@ -8,7 +8,3 @@ form {
     justify-self: center;
     grid-area: form;
 }
-
-Footer {
- grid-area: footer;
-}
